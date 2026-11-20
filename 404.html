@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 · Accès refusé | Jean-Baptiste BEL</title>
+<meta name="description" content="Page introuvable.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0a0e14">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .not-found {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .not-found__inner { max-width: 640px; width: 100%; }
+  .not-found__message { color: var(--text-dim); font-size: 1.05rem; margin: 1.2em 0 1.6em; }
+</style>
+</head>
+<body>
+  <main class="not-found">
+    <div class="not-found__inner">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--amber"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">jbbel@portfolio: ~</span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd">sudo -l</span></p>
+          <pre class="terminal__output">[sudo] password for jbbel:
+Sorry, user jbbel may not run sudo on this page.</pre>
+        </div>
+      </div>
+
+      <h1 style="color:#fff; font-size: clamp(1.6rem, 4vw, 2.4rem);">404 · Accès refusé</h1>
+      <p class="not-found__message">Cette page n'existe pas, ou n'a jamais existé.</p>
+      <a class="btn btn--primary" href="./">Retour à l'accueil</a>
+    </div>
+  </main>
+</body>
+</html>

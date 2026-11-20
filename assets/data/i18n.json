@@ -1,0 +1,392 @@
+{
+  "fr": {
+    "meta": {
+      "title": "Jean-Baptiste BEL · Ingénieur SSI | Portfolio",
+      "description": "Portfolio de Jean-Baptiste BEL, Ingénieur en sécurité des systèmes d'information, présenté comme une cyber kill chain.",
+      "ogTitle": "Jean-Baptiste BEL · Ingénieur SSI",
+      "ogDescription": "4 ans d'expérience en cybersécurité à la Préfecture de Police de Paris. Audit, réponse à incident, forensique, administration systèmes."
+    },
+    "skip": "Aller au contenu principal",
+    "nav": {
+      "brand": "jbbel@portfolio:~$",
+      "recon": { "label": "Profil", "step": "recon" },
+      "weaponization": { "label": "Compétences", "step": "weaponization" },
+      "delivery": { "label": "Formation", "step": "delivery" },
+      "exploitation": { "label": "Expériences", "step": "exploitation" },
+      "c2": { "label": "Projets", "step": "c2" },
+      "actions": { "label": "Contact", "step": "actions" },
+      "writeups": "Writeups",
+      "langSwitch": "Changer la langue / Switch language",
+      "menuOpen": "Ouvrir le menu",
+      "menuClose": "Fermer le menu"
+    },
+    "progress": {
+      "label": "Progression de la kill chain"
+    },
+    "hero": {
+      "kicker": "Étape 01 · Reconnaissance",
+      "name": "Jean-Baptiste BEL",
+      "jobTitle": "Ingénieur SSI",
+      "meta": "23 ans · Bois-Colombes (92)",
+      "pitch": "Spécialiste cybersécurité, 4 ans d'expérience à la Préfecture de Police de Paris. Expertise en sécurité des systèmes d'information et conduite de projet, du hardening à la gestion de crise.",
+      "ctaWriteups": "Lire mes writeups",
+      "ctaContact": "Me contacter",
+      "linksLabel": "Liens",
+      "outputLabels": {
+        "uid": "utilisateur",
+        "groups": "groupes"
+      }
+    },
+    "weaponization": {
+      "kicker": "Étape 02 · Weaponization",
+      "title": "Compétences",
+      "intro": "Chaque compétence est un processus, chaque sous-domaine un processus enfant. Cliquez sur une carte pour afficher le détail façon dump mémoire.",
+      "cardHint": "Voir le détail",
+      "detailTitle": "Dump mémoire :",
+      "detailClose": "Fermer",
+      "detailPidLabel": "PID",
+      "detailStartLabel": "démarré",
+      "detailStateLabel": "état",
+      "technosTitle": "Processus enfants"
+    },
+    "delivery": {
+      "kicker": "Étape 03 · Delivery",
+      "title": "Formation",
+      "intro": "Diplômes, certifications et habilitations, livrés comme un listing de fichiers.",
+      "educationTitle": "Diplômes",
+      "certsTitle": "Certifications & habilitations",
+      "projectsLabel": "Projets associés",
+      "items": [
+        {
+          "school": "Sup de Vinci",
+          "degree": "Master 2 Cybersécurité",
+          "period": "2024 - 2026",
+          "projects": [
+            "Outil d'automatisation d'audits",
+            "Déploiement automatisé d'un SOC"
+          ]
+        },
+        {
+          "school": "Sup de Vinci",
+          "degree": "Bachelor Système & Réseau, Cloud",
+          "period": "2020 - 2023",
+          "projects": [
+            "Mise en place d'un système d'information client via Terraform et Ansible"
+          ]
+        }
+      ],
+      "certs": [
+        { "name": "Palo Alto · Cloud Security Automation", "issuer": "Palo Alto Networks" },
+        { "name": "Palo Alto · Security Operations Fundamentals", "issuer": "Palo Alto Networks" },
+        { "name": "CCNA 1 · Réseaux (OSI/TCP-IP)", "issuer": "Cisco" },
+        { "name": "CCNA 2 · Routage & commutation LAN/WAN", "issuer": "Cisco" },
+        { "name": "CCNA 3 · Sécurité réseau", "issuer": "Cisco" },
+        { "name": "Secret de la défense nationale", "issuer": "DRSD" },
+        { "name": "PSE2 · Premiers Secours en Équipe niveau 2", "issuer": "Protection civile" }
+      ]
+    },
+    "exploitation": {
+      "kicker": "Étape 04 · Exploitation",
+      "title": "Expériences",
+      "intro": "Chaque poste occupé, retrouvé comme une route exposée sur le serveur.",
+      "current": "En cours",
+      "items": [
+        {
+          "org": "Préfecture de Police de Paris · DILT",
+          "role": "Ingénieur SSI (apprenti M2)",
+          "period": "2024 - 2026",
+          "bullets": [
+            "Déploiement et création de solutions de sécurité sur mesure",
+            "Audits et tests d'intrusion",
+            "Encadrement et management d'une équipe de 5 collaborateurs, participation au recrutement",
+            "Qualification et analyse d'e-mails et pièces jointes malveillantes, investigations et levée de doute en contexte de menace cyber",
+            "Gestion de projets en mode Agile et recommandations SSI sur les projets transverses",
+            "Appui au RSSI sur les analyses de risques et la mise en œuvre des référentiels de sécurité"
+          ]
+        },
+        {
+          "org": "Préfecture de Police · SGZDS",
+          "role": "Ingénieur SSI (apprenti M1)",
+          "period": "2023 - 2024",
+          "bullets": [
+            "Collaboration matricielle avec les équipes SSI",
+            "Mise en œuvre de la politique de sécurité des systèmes (PGSN MI)",
+            "Sécurisation des systèmes d'information pour les Jeux Olympiques de Paris 2024",
+            "Identification et évaluation des risques (ISO 27001)",
+            "Développement et déploiement de solutions de sécurité (station blanche, serveurs sécurisés)"
+          ]
+        },
+        {
+          "org": "Préfecture de Police",
+          "role": "Administrateur SIC (apprenti L3)",
+          "period": "2022 - 2023",
+          "bullets": [
+            "Support N1/N2",
+            "Ticketing GLPI",
+            "Solution de chiffrement sur matériel professionnel",
+            "Windows Server : domaine, Active Directory, forêt, SFTP, RDP, VPN, ADCS, gestion des droits, MDT, WSUS"
+          ]
+        },
+        {
+          "org": "Préfecture de Police",
+          "role": "Technicien SIC (stage 4 mois)",
+          "period": "2022",
+          "bullets": [
+            "Support N1",
+            "Ticketing GLPI",
+            "Rédaction de procédures techniciens et utilisateurs",
+            "Configuration et installation de matériels professionnels (NoeMI, Hesperis 2)"
+          ]
+        },
+        {
+          "org": "Croix-Rouge Française",
+          "role": "Secouriste bénévole",
+          "period": "Depuis août 2025",
+          "bullets": [
+            "Réseau de secours SAMU et BSPP",
+            "Dispositifs prévisionnels de secours",
+            "Maraudes",
+            "Interventions urgentes (plan ORSEC)"
+          ]
+        }
+      ]
+    },
+    "c2": {
+      "kicker": "Étape 05 · Command & Control",
+      "title": "Projets",
+      "intro": "Mes projets techniques et mes writeups DFIR / CTF.",
+      "viewGithub": "Voir sur GitHub",
+      "viewDemo": "Voir la démo",
+      "comingSoon": "Contenu à venir"
+    },
+    "actions": {
+      "kicker": "Étape 06 · Actions sur objectifs",
+      "title": "Contact",
+      "intro": "Connexion établie. Formulaire ou lien direct, au choix.",
+      "formName": "Nom",
+      "formEmail": "Votre e-mail",
+      "formMessage": "Message",
+      "formSend": "Envoyer",
+      "directTitle": "Contact direct",
+      "passionsTitle": "Passions",
+      "qualitiesTitle": "Qualités",
+      "languagesTitle": "Langues",
+      "passions": ["Aviation (LAPL)", "CTF", "Développement Python/Bash", "Boxe française", "Rugby", "Secourisme"],
+      "qualities": ["Aisance relationnelle", "Gestion du stress et de l'urgence", "Rigueur", "Autonomie"],
+      "languages": [
+        { "name": "Français", "level": "Natif" },
+        { "name": "Anglais", "level": "B2" },
+        { "name": "Espagnol", "level": "A2" }
+      ]
+    },
+    "footer": {
+      "text": "Construit à la main, sans framework. Hébergé sur GitHub Pages.",
+      "backToTop": "Retour en haut"
+    },
+    "notFound": {
+      "title": "404 · Accès refusé",
+      "message": "Cette page n'existe pas, ou n'a jamais existé.",
+      "backHome": "Retour à l'accueil"
+    },
+    "konami": {
+      "title": "ACCÈS ROOT ACCORDÉ",
+      "flag": "FLAG{tu_as_trouve_le_konami_code}",
+      "hint": "Appuyez sur une touche pour fermer"
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Jean-Baptiste BEL · Information Security Engineer | Portfolio",
+      "description": "Portfolio of Jean-Baptiste BEL, Information Security Engineer, presented as a cyber kill chain.",
+      "ogTitle": "Jean-Baptiste BEL · Information Security Engineer",
+      "ogDescription": "4 years of cybersecurity experience at the Paris Police Prefecture. Auditing, incident response, forensics, systems administration."
+    },
+    "skip": "Skip to main content",
+    "nav": {
+      "brand": "jbbel@portfolio:~$",
+      "recon": { "label": "Profile", "step": "recon" },
+      "weaponization": { "label": "Skills", "step": "weaponization" },
+      "delivery": { "label": "Education", "step": "delivery" },
+      "exploitation": { "label": "Experience", "step": "exploitation" },
+      "c2": { "label": "Projects", "step": "c2" },
+      "actions": { "label": "Contact", "step": "actions" },
+      "writeups": "Writeups",
+      "langSwitch": "Changer la langue / Switch language",
+      "menuOpen": "Open menu",
+      "menuClose": "Close menu"
+    },
+    "progress": {
+      "label": "Kill chain progress"
+    },
+    "hero": {
+      "kicker": "Step 01 · Reconnaissance",
+      "name": "Jean-Baptiste BEL",
+      "jobTitle": "Information Security Engineer",
+      "meta": "23 years old · Bois-Colombes, France",
+      "pitch": "Cybersecurity specialist with 4 years of experience at the Paris Police Prefecture. Expertise in information systems security and project management, from hardening to crisis response.",
+      "ctaWriteups": "Read my write-ups",
+      "ctaContact": "Contact me",
+      "linksLabel": "Links",
+      "outputLabels": {
+        "uid": "user",
+        "groups": "groups"
+      }
+    },
+    "weaponization": {
+      "kicker": "Step 02 · Weaponization",
+      "title": "Skills",
+      "intro": "Each skill is a process, each sub-skill a child process. Click a card to open the memory-dump detail view.",
+      "cardHint": "View detail",
+      "detailTitle": "Memory dump:",
+      "detailClose": "Close",
+      "detailPidLabel": "PID",
+      "detailStartLabel": "started",
+      "detailStateLabel": "state",
+      "technosTitle": "Child processes"
+    },
+    "delivery": {
+      "kicker": "Step 03 · Delivery",
+      "title": "Education",
+      "intro": "Degrees, certifications and clearances, delivered as a file listing.",
+      "educationTitle": "Degrees",
+      "certsTitle": "Certifications & clearances",
+      "projectsLabel": "Related projects",
+      "items": [
+        {
+          "school": "Sup de Vinci",
+          "degree": "Master's in Cybersecurity",
+          "period": "2024 - 2026",
+          "projects": [
+            "Audit automation tool",
+            "Automated SOC deployment"
+          ]
+        },
+        {
+          "school": "Sup de Vinci",
+          "degree": "Bachelor's in Systems & Networks, Cloud",
+          "period": "2020 - 2023",
+          "projects": [
+            "Client information system deployment via Terraform and Ansible"
+          ]
+        }
+      ],
+      "certs": [
+        { "name": "Palo Alto · Cloud Security Automation", "issuer": "Palo Alto Networks" },
+        { "name": "Palo Alto · Security Operations Fundamentals", "issuer": "Palo Alto Networks" },
+        { "name": "CCNA 1 · Networking (OSI/TCP-IP)", "issuer": "Cisco" },
+        { "name": "CCNA 2 · LAN/WAN routing & switching", "issuer": "Cisco" },
+        { "name": "CCNA 3 · Network security", "issuer": "Cisco" },
+        { "name": "National Defense Secret clearance", "issuer": "DRSD" },
+        { "name": "PSE2 · Emergency Team First Aid, level 2", "issuer": "Civil Protection" }
+      ]
+    },
+    "exploitation": {
+      "kicker": "Step 04 · Exploitation",
+      "title": "Experience",
+      "intro": "Every role held, found here as an exposed route on the server.",
+      "current": "Ongoing",
+      "items": [
+        {
+          "org": "Paris Police Prefecture · DILT",
+          "role": "Information Security Engineer (Master's apprentice)",
+          "period": "2024 - 2026",
+          "bullets": [
+            "Deployment and design of custom security solutions",
+            "Security audits and penetration testing",
+            "Supervision and management of a team of 5, involved in recruitment",
+            "Qualification and analysis of malicious emails and attachments, investigations and threat clearance in cyber threat contexts",
+            "Agile project management and ISS recommendations on cross-functional projects",
+            "Support to the CISO on risk analyses and implementation of security frameworks"
+          ]
+        },
+        {
+          "org": "Paris Police Prefecture · SGZDS",
+          "role": "Information Security Engineer (Bachelor's apprentice)",
+          "period": "2023 - 2024",
+          "bullets": [
+            "Matrix collaboration with information security teams",
+            "Implementation of the information systems security policy (PGSN MI)",
+            "Securing information systems for the Paris 2024 Olympic Games",
+            "Risk identification and assessment (ISO 27001)",
+            "Development and deployment of security solutions (isolated clean rooms, hardened servers)"
+          ]
+        },
+        {
+          "org": "Paris Police Prefecture",
+          "role": "IT & Communications Systems Administrator (Bachelor's apprentice)",
+          "period": "2022 - 2023",
+          "bullets": [
+            "Tier 1/2 support",
+            "GLPI ticketing",
+            "Encryption solution deployment on professional hardware",
+            "Windows Server: domain, Active Directory, forest, SFTP, RDP, VPN, ADCS, rights management, MDT, WSUS"
+          ]
+        },
+        {
+          "org": "Paris Police Prefecture",
+          "role": "IT & Communications Systems Technician (4-month internship)",
+          "period": "2022",
+          "bullets": [
+            "Tier 1 support",
+            "GLPI ticketing",
+            "Writing technician and user procedures",
+            "Configuration and installation of professional hardware (NoeMI, Hesperis 2)"
+          ]
+        },
+        {
+          "org": "French Red Cross",
+          "role": "Volunteer First Responder",
+          "period": "Since August 2025",
+          "bullets": [
+            "SAMU and BSPP emergency response network",
+            "Planned emergency medical coverage for public events",
+            "Street outreach",
+            "Emergency interventions (ORSEC plan)"
+          ]
+        }
+      ]
+    },
+    "c2": {
+      "kicker": "Step 05 · Command & Control",
+      "title": "Projects",
+      "intro": "My technical projects and DFIR / CTF write-ups.",
+      "viewGithub": "View on GitHub",
+      "viewDemo": "View demo",
+      "comingSoon": "Coming soon"
+    },
+    "actions": {
+      "kicker": "Step 06 · Actions on Objectives",
+      "title": "Contact",
+      "intro": "Connection established. Form or direct link, your choice.",
+      "formName": "Name",
+      "formEmail": "Your email",
+      "formMessage": "Message",
+      "formSend": "Send",
+      "directTitle": "Direct contact",
+      "passionsTitle": "Interests",
+      "qualitiesTitle": "Strengths",
+      "languagesTitle": "Languages",
+      "passions": ["Aviation (LAPL)", "CTF", "Python/Bash development", "French boxing", "Rugby", "First aid"],
+      "qualities": ["Interpersonal ease", "Stress & emergency management", "Rigor", "Autonomy"],
+      "languages": [
+        { "name": "French", "level": "Native" },
+        { "name": "English", "level": "B2" },
+        { "name": "Spanish", "level": "A2" }
+      ]
+    },
+    "footer": {
+      "text": "Hand-built, no framework. Hosted on GitHub Pages.",
+      "backToTop": "Back to top"
+    },
+    "notFound": {
+      "title": "404 · Access Denied",
+      "message": "This page doesn't exist, or never did.",
+      "backHome": "Back to home"
+    },
+    "konami": {
+      "title": "ROOT ACCESS GRANTED",
+      "flag": "FLAG{you_found_the_konami_code}",
+      "hint": "Press any key to close"
+    }
+  }
+}

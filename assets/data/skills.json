@@ -1,0 +1,152 @@
+{
+  "dumpHeader": "PID    PPID   NAME                          START       STATE",
+  "domains": [
+    {
+      "id": "cybersecurite-ssi",
+      "pid": 1000,
+      "ppid": 1,
+      "start": "09:12:01",
+      "state": "R",
+      "name": { "fr": "Cybersécurité & SSI", "en": "Cybersecurity & ISS" },
+      "description": {
+        "fr": "Conformité, audits, pentest, hardening et sensibilisation au service de la sécurité des systèmes d'information.",
+        "en": "Compliance, audits, pentesting, hardening and awareness in service of information systems security."
+      },
+      "children": [
+        { "pid": 1001, "start": "09:12:02", "state": "S", "name": { "fr": "Conformité", "en": "Compliance" } },
+        { "pid": 1002, "start": "09:12:03", "state": "S", "name": { "fr": "Audits", "en": "Audits" } },
+        { "pid": 1003, "start": "09:12:04", "state": "S", "name": { "fr": "Pentest", "en": "Penetration testing" } },
+        { "pid": 1004, "start": "09:12:05", "state": "S", "name": { "fr": "Hardening", "en": "Hardening" } },
+        { "pid": 1005, "start": "09:12:06", "state": "S", "name": { "fr": "NGFW", "en": "NGFW" } },
+        { "pid": 1006, "start": "09:12:07", "state": "S", "name": { "fr": "Sensibilisation", "en": "Security awareness" } },
+        { "pid": 1007, "start": "09:12:08", "state": "S", "name": { "fr": "CheckMarx", "en": "Checkmarx" } }
+      ]
+    },
+    {
+      "id": "incident-response",
+      "pid": 1008,
+      "ppid": 1,
+      "start": "09:12:09",
+      "state": "R",
+      "name": { "fr": "Réponse à incident", "en": "Incident Response" },
+      "description": {
+        "fr": "Détection, investigation, remédiation et gestion des vulnérabilités en conditions réelles.",
+        "en": "Detection, investigation, remediation and vulnerability management under real conditions."
+      },
+      "children": [
+        { "pid": 1009, "start": "09:12:10", "state": "S", "name": { "fr": "Détection", "en": "Detection" } },
+        { "pid": 1010, "start": "09:12:11", "state": "S", "name": { "fr": "Investigation", "en": "Investigation" } },
+        { "pid": 1011, "start": "09:12:12", "state": "S", "name": { "fr": "Remédiation", "en": "Remediation" } },
+        { "pid": 1012, "start": "09:12:13", "state": "S", "name": { "fr": "Gestion des vulnérabilités", "en": "Vulnerability management" } }
+      ]
+    },
+    {
+      "id": "forensique-numerique",
+      "pid": 1013,
+      "ppid": 1,
+      "start": "09:12:14",
+      "state": "R",
+      "name": { "fr": "Forensique numérique", "en": "Digital Forensics" },
+      "description": {
+        "fr": "Collecte de preuves et analyse post-incident pour la levée de doute et l'investigation.",
+        "en": "Evidence collection and post-incident analysis for threat clearance and investigation."
+      },
+      "children": [
+        { "pid": 1014, "start": "09:12:15", "state": "S", "name": { "fr": "Collecte de preuves", "en": "Evidence collection" } },
+        { "pid": 1015, "start": "09:12:16", "state": "S", "name": { "fr": "Analyse post-incident", "en": "Post-incident analysis" } }
+      ]
+    },
+    {
+      "id": "admin-sys-reseau",
+      "pid": 1016,
+      "ppid": 1,
+      "start": "09:12:17",
+      "state": "R",
+      "name": { "fr": "Administration Systèmes & Réseaux", "en": "Systems & Network Administration" },
+      "description": {
+        "fr": "Active Directory, GPO, déploiement de services, VPN et contrôle d'accès.",
+        "en": "Active Directory, GPO, service deployment, VPN and access control."
+      },
+      "children": [
+        { "pid": 1017, "start": "09:12:18", "state": "S", "name": { "fr": "Active Directory", "en": "Active Directory" } },
+        { "pid": 1018, "start": "09:12:19", "state": "S", "name": { "fr": "GPO", "en": "GPO" } },
+        { "pid": 1019, "start": "09:12:20", "state": "S", "name": { "fr": "Déploiement de services", "en": "Service deployment" } },
+        { "pid": 1020, "start": "09:12:21", "state": "S", "name": { "fr": "VPN", "en": "VPN" } },
+        { "pid": 1021, "start": "09:12:22", "state": "S", "name": { "fr": "Contrôle d'accès", "en": "Access control" } }
+      ]
+    },
+    {
+      "id": "dev-scripting",
+      "pid": 1022,
+      "ppid": 1,
+      "start": "09:12:23",
+      "state": "R",
+      "name": { "fr": "Développement & Scripting", "en": "Development & Scripting" },
+      "description": {
+        "fr": "Automatisation et outillage via Python, Bash, PowerShell et le web.",
+        "en": "Automation and tooling via Python, Bash, PowerShell and the web."
+      },
+      "children": [
+        { "pid": 1023, "start": "09:12:24", "state": "S", "name": { "fr": "Python", "en": "Python" } },
+        { "pid": 1024, "start": "09:12:25", "state": "S", "name": { "fr": "Bash", "en": "Bash" } },
+        { "pid": 1025, "start": "09:12:26", "state": "S", "name": { "fr": "PowerShell", "en": "PowerShell" } },
+        { "pid": 1026, "start": "09:12:27", "state": "S", "name": { "fr": "HTML/CSS/JS", "en": "HTML/CSS/JS" } },
+        { "pid": 1027, "start": "09:12:28", "state": "S", "name": { "fr": "Neovim", "en": "Neovim" } }
+      ]
+    },
+    {
+      "id": "virtualisation",
+      "pid": 1028,
+      "ppid": 1,
+      "start": "09:12:29",
+      "state": "R",
+      "name": { "fr": "Virtualisation", "en": "Virtualization" },
+      "description": {
+        "fr": "Environnements virtualisés et conteneurisés pour le lab et la production.",
+        "en": "Virtualized and containerized environments for lab and production."
+      },
+      "children": [
+        { "pid": 1029, "start": "09:12:30", "state": "S", "name": { "fr": "VMware", "en": "VMware" } },
+        { "pid": 1030, "start": "09:12:31", "state": "S", "name": { "fr": "Proxmox VE", "en": "Proxmox VE" } },
+        { "pid": 1031, "start": "09:12:32", "state": "S", "name": { "fr": "Docker", "en": "Docker" } },
+        { "pid": 1032, "start": "09:12:33", "state": "S", "name": { "fr": "Podman", "en": "Podman" } }
+      ]
+    },
+    {
+      "id": "operating-systems",
+      "pid": 1033,
+      "ppid": 1,
+      "start": "09:12:34",
+      "state": "R",
+      "name": { "fr": "Systèmes d'exploitation", "en": "Operating Systems" },
+      "description": {
+        "fr": "Maîtrise des environnements Linux et Windows, poste et serveur.",
+        "en": "Proficiency across Linux and Windows environments, workstation and server."
+      },
+      "children": [
+        { "pid": 1034, "start": "09:12:35", "state": "S", "name": { "fr": "Debian", "en": "Debian" } },
+        { "pid": 1035, "start": "09:12:36", "state": "S", "name": { "fr": "RHEL", "en": "RHEL" } },
+        { "pid": 1036, "start": "09:12:37", "state": "S", "name": { "fr": "Windows client", "en": "Windows Client" } },
+        { "pid": 1037, "start": "09:12:38", "state": "S", "name": { "fr": "Windows Server", "en": "Windows Server" } }
+      ]
+    },
+    {
+      "id": "methodo-projets",
+      "pid": 1038,
+      "ppid": 1,
+      "start": "09:12:39",
+      "state": "R",
+      "name": { "fr": "Méthodologie & Gestion de projet", "en": "Methodology & Project Management" },
+      "description": {
+        "fr": "Conduite de projet Agile et référentiels de sécurité normatifs.",
+        "en": "Agile project management and normative security frameworks."
+      },
+      "children": [
+        { "pid": 1039, "start": "09:12:40", "state": "S", "name": { "fr": "Agile MOA/MOE/CDP", "en": "Agile MOA/MOE/CDP" } },
+        { "pid": 1040, "start": "09:12:41", "state": "S", "name": { "fr": "ISO 27001", "en": "ISO 27001" } },
+        { "pid": 1041, "start": "09:12:42", "state": "S", "name": { "fr": "PGSN MI", "en": "PGSN MI" } },
+        { "pid": 1042, "start": "09:12:43", "state": "S", "name": { "fr": "IGI 1300", "en": "IGI 1300" } }
+      ]
+    }
+  ]
+}

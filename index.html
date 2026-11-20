@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jean-Baptiste BEL · Ingénieur SSI | Portfolio</title>
+<meta name="description" content="Portfolio de Jean-Baptiste BEL, Ingénieur en sécurité des systèmes d'information, présenté comme une cyber kill chain.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0a0e14">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jean-Baptiste BEL · Ingénieur SSI">
+<meta property="og:description" content="4 ans d'expérience en cybersécurité à la Préfecture de Police de Paris. Audit, réponse à incident, forensique, administration systèmes.">
+<meta property="og:image" content="assets/img/og-cover.svg">
+<meta property="og:locale" content="fr_FR">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jean-Baptiste BEL · Ingénieur SSI">
+<meta name="twitter:description" content="4 ans d'expérience en cybersécurité à la Préfecture de Police de Paris.">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="skip">Aller au contenu principal</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header">
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="site-nav__brand" aria-hidden="true">jbbel@portfolio<span class="cursor-tilde">:~$</span></div>
+
+    <button class="burger" id="burgerBtn" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="burger__box"><span class="burger__inner"></span></span>
+      <span class="sr-only" data-i18n="nav.menuOpen">Ouvrir le menu</span>
+    </button>
+
+    <ul class="site-nav__links" id="navLinks">
+      <li><a href="#recon" class="nav-link" data-section="recon">
+        <span class="nav-link__label" data-i18n="nav.recon.label">Profil</span>
+        <span class="nav-link__step" data-i18n="nav.recon.step">[recon]</span>
+      </a></li>
+      <li><a href="#weaponization" class="nav-link" data-section="weaponization">
+        <span class="nav-link__label" data-i18n="nav.weaponization.label">Compétences</span>
+        <span class="nav-link__step" data-i18n="nav.weaponization.step">[weaponization]</span>
+      </a></li>
+      <li><a href="#delivery" class="nav-link" data-section="delivery">
+        <span class="nav-link__label" data-i18n="nav.delivery.label">Formation</span>
+        <span class="nav-link__step" data-i18n="nav.delivery.step">[delivery]</span>
+      </a></li>
+      <li><a href="#exploitation" class="nav-link" data-section="exploitation">
+        <span class="nav-link__label" data-i18n="nav.exploitation.label">Expériences</span>
+        <span class="nav-link__step" data-i18n="nav.exploitation.step">[exploitation]</span>
+      </a></li>
+      <li><a href="#c2" class="nav-link" data-section="c2">
+        <span class="nav-link__label" data-i18n="nav.c2.label">Projets</span>
+        <span class="nav-link__step" data-i18n="nav.c2.step">[c2]</span>
+      </a></li>
+      <li><a href="#actions" class="nav-link" data-section="actions">
+        <span class="nav-link__label" data-i18n="nav.actions.label">Contact</span>
+        <span class="nav-link__step" data-i18n="nav.actions.step">[actions]</span>
+      </a></li>
+    </ul>
+
+    <div class="site-nav__tools">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Changer la langue / Switch language" data-i18n-aria="nav.langSwitch">
+        <span class="lang-switch__opt" data-lang-opt="fr">FR</span>/<span class="lang-switch__opt" data-lang-opt="en">EN</span>
+      </button>
+      <a class="btn btn--primary btn--sm" id="writeupsBtnNav" href="https://s0seche.github.io/">
+        <span data-i18n="nav.writeups">Writeups</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Kill chain progress bar -->
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" aria-label="Progression de la kill chain" data-i18n-aria="progress.label" id="progressBar">
+    <span class="progress-bar__segment" data-segment="recon"></span>
+    <span class="progress-bar__segment" data-segment="weaponization"></span>
+    <span class="progress-bar__segment" data-segment="delivery"></span>
+    <span class="progress-bar__segment" data-segment="exploitation"></span>
+    <span class="progress-bar__segment" data-segment="c2"></span>
+    <span class="progress-bar__segment" data-segment="actions"></span>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <ul class="mobile-menu__links">
+    <li><a href="#recon" class="mobile-menu__link" data-section="recon">
+      <span data-i18n="nav.recon.label">Profil</span> <span class="nav-link__step" data-i18n="nav.recon.step">[recon]</span>
+    </a></li>
+    <li><a href="#weaponization" class="mobile-menu__link" data-section="weaponization">
+      <span data-i18n="nav.weaponization.label">Compétences</span> <span class="nav-link__step" data-i18n="nav.weaponization.step">[weaponization]</span>
+    </a></li>
+    <li><a href="#delivery" class="mobile-menu__link" data-section="delivery">
+      <span data-i18n="nav.delivery.label">Formation</span> <span class="nav-link__step" data-i18n="nav.delivery.step">[delivery]</span>
+    </a></li>
+    <li><a href="#exploitation" class="mobile-menu__link" data-section="exploitation">
+      <span data-i18n="nav.exploitation.label">Expériences</span> <span class="nav-link__step" data-i18n="nav.exploitation.step">[exploitation]</span>
+    </a></li>
+    <li><a href="#c2" class="mobile-menu__link" data-section="c2">
+      <span data-i18n="nav.c2.label">Projets</span> <span class="nav-link__step" data-i18n="nav.c2.step">[c2]</span>
+    </a></li>
+    <li><a href="#actions" class="mobile-menu__link" data-section="actions">
+      <span data-i18n="nav.actions.label">Contact</span> <span class="nav-link__step" data-i18n="nav.actions.step">[actions]</span>
+    </a></li>
+  </ul>
+  <a class="btn btn--primary" href="https://s0seche.github.io/">
+    <span data-i18n="nav.writeups">Writeups</span>
+  </a>
+</div>
+
+<main id="main">
+
+  <!-- ============ 01 RECON · HERO ============ -->
+  <section id="recon" class="section hero" aria-labelledby="recon-title">
+    <div class="section__inner">
+
+      <div class="terminal" data-terminal>
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--amber"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">jbbel@portfolio: ~/recon</span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd" data-typing>whoami</span></p>
+          <p class="terminal__output" data-output>jbbel</p>
+          <p class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd" data-typing>id</span></p>
+          <pre class="terminal__output" data-output>uid=1000(jbbel) gid=1000(ssi) groups=cyber,pentest,forensics,croix-rouge</pre>
+        </div>
+      </div>
+
+      <p class="kicker" data-i18n="hero.kicker">Étape 01 · Reconnaissance</p>
+      <h1 id="recon-title" class="hero__name" data-i18n="hero.name">Jean-Baptiste BEL</h1>
+      <p class="hero__role"><span data-i18n="hero.jobTitle">Ingénieur SSI</span> · <span data-i18n="hero.meta">23 ans · Bois-Colombes (92)</span></p>
+      <p class="hero__pitch" data-i18n="hero.pitch">Spécialiste cybersécurité, 4 ans d'expérience à la Préfecture de Police de Paris. Expertise en sécurité des systèmes d'information et conduite de projet, du hardening à la gestion de crise.</p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="https://s0seche.github.io/">
+          <span data-i18n="hero.ctaWriteups">Lire mes writeups</span>
+        </a>
+        <a class="btn btn--ghost" href="#actions">
+          <span data-i18n="hero.ctaContact">Me contacter</span>
+        </a>
+      </div>
+
+      <ul class="hero__links" aria-label="Liens" data-i18n-aria="hero.linksLabel">
+        <li><a href="https://s0seche.github.io/">Writeups DFIR &amp; CTF</a></li>
+        <li><a href="https://github.com/s0seche" target="_blank" rel="noopener noreferrer">GitHub · s0seche</a></li>
+        <li><a href="mailto:jean.baptiste.bel.pro@gmail.com">jean.baptiste.bel.pro@gmail.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 02 WEAPONIZATION · SKILLS ============ -->
+  <section id="weaponization" class="section" aria-labelledby="weaponization-title">
+    <div class="section__inner">
+
+      <div class="terminal" data-terminal>
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--amber"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">jbbel@portfolio: ~/weaponization</span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd" data-typing>volatility -f jbbel.mem --profile=IngenieurSSI_x64 pslist</span></p>
+          <pre class="terminal__output terminal__output--table" data-output id="pslistOutput">PID    PPID   NAME                          START       STATE
+1000   1      cybersecurite-ssi             09:12:01    R
+1001   1000    ├─ conformite                09:12:02    S
+1002   1000    ├─ audits                    09:12:03    S
+1003   1000    ├─ pentest                   09:12:04    S
+1004   1000    ├─ hardening                 09:12:05    S
+1005   1000    ├─ ngfw                      09:12:06    S
+1006   1000    ├─ sensibilisation           09:12:07    S
+1007   1000    └─ checkmarx                 09:12:08    S
+1008   1      incident-response             09:12:09    R
+1009   1008    ├─ detection                 09:12:10    S
+1010   1008    ├─ investigation             09:12:11    S
+1011   1008    ├─ remediation               09:12:12    S
+1012   1008    └─ gestion-vulnerabilites    09:12:13    S
+1013   1      forensique-numerique          09:12:14    R
+1014   1013    ├─ collecte-preuves          09:12:15    S
+1015   1013    └─ analyse-post-incident     09:12:16    S
+1016   1      admin-sys-reseau              09:12:17    R
+1017   1016    ├─ active-directory          09:12:18    S
+1018   1016    ├─ gpo                       09:12:19    S
+1019   1016    ├─ deploiement-services      09:12:20    S
+1020   1016    ├─ vpn                       09:12:21    S
+1021   1016    └─ controle-acces            09:12:22    S
+1022   1      dev-scripting                 09:12:23    R
+1023   1022    ├─ python                    09:12:24    S
+1024   1022    ├─ bash                      09:12:25    S
+1025   1022    ├─ powershell                09:12:26    S
+1026   1022    ├─ html-css-js               09:12:27    S
+1027   1022    └─ neovim                    09:12:28    S
+1028   1      virtualisation                09:12:29    R
+1029   1028    ├─ vmware                    09:12:30    S
+1030   1028    ├─ proxmox-ve                09:12:31    S
+1031   1028    ├─ docker                    09:12:32    S
+1032   1028    └─ podman                    09:12:33    S
+1033   1      operating-systems             09:12:34    R
+1034   1033    ├─ debian                    09:12:35    S
+1035   1033    ├─ rhel                      09:12:36    S
+1036   1033    ├─ windows-client            09:12:37    S
+1037   1033    └─ windows-server            09:12:38    S
+1038   1      methodo-projets               09:12:39    R
+1039   1038    ├─ agile-moa-moe-cdp         09:12:40    S
+1040   1038    ├─ iso-27001                 09:12:41    S
+1041   1038    ├─ pgsn-mi                   09:12:42    S
+1042   1038    └─ igi-1300                  09:12:43    S</pre>
+        </div>
+      </div>
+
+      <p class="kicker" data-i18n="weaponization.kicker">Étape 02 · Weaponization</p>
+      <h2 id="weaponization-title" data-i18n="weaponization.title">Compétences</h2>
+      <p class="section__intro" data-i18n="weaponization.intro">Chaque compétence est un processus, chaque sous-domaine un processus enfant. Cliquez sur une carte pour afficher le détail façon dump mémoire.</p>
+
+      <div class="skills-grid" id="skillsGrid" aria-live="polite">
+        <!-- Rendered by JS from assets/data/skills.json -->
+      </div>
+
+      <noscript>
+        <ul class="noscript-list">
+          <li>Cybersécurité &amp; SSI : Conformité, Audits, Pentest, Hardening, NGFW, Sensibilisation, CheckMarx</li>
+          <li>Réponse à incident : Détection, Investigation, Remédiation, Gestion des vulnérabilités</li>
+          <li>Forensique numérique : Collecte de preuves, Analyse post-incident</li>
+          <li>Administration Systèmes &amp; Réseaux : Active Directory, GPO, Déploiement de services, VPN, Contrôle d'accès</li>
+          <li>Développement &amp; Scripting : Python, Bash, PowerShell, HTML/CSS/JS, Neovim</li>
+          <li>Virtualisation : VMware, Proxmox VE, Docker, Podman</li>
+          <li>Systèmes d'exploitation : Debian, RHEL, Windows client, Windows Server</li>
+          <li>Méthodologie &amp; Gestion de projet : Agile MOA/MOE/CDP, ISO 27001, PGSN MI, IGI 1300</li>
+        </ul>
+      </noscript>
+
+      <!-- Detail dialog for a skill domain -->
+      <div class="skill-detail" id="skillDetail" role="dialog" aria-modal="true" aria-labelledby="skillDetailTitle" hidden>
+        <div class="skill-detail__backdrop" data-close-detail></div>
+        <div class="skill-detail__panel">
+          <button class="skill-detail__close" data-close-detail aria-label="Fermer" data-i18n-aria="weaponization.detailClose">&times;</button>
+          <p class="skill-detail__eyebrow"><span data-i18n="weaponization.detailTitle">Dump mémoire :</span> <span id="skillDetailName"></span></p>
+          <h3 id="skillDetailTitle"></h3>
+          <p id="skillDetailDescription" class="skill-detail__desc"></p>
+          <dl class="skill-detail__meta">
+            <div><dt data-i18n="weaponization.detailPidLabel">PID</dt><dd id="skillDetailPid"></dd></div>
+            <div><dt data-i18n="weaponization.detailStartLabel">démarré</dt><dd id="skillDetailStart"></dd></div>
+            <div><dt data-i18n="weaponization.detailStateLabel">état</dt><dd id="skillDetailState"></dd></div>
+          </dl>
+          <p class="skill-detail__technos-title" data-i18n="weaponization.technosTitle">Processus enfants</p>
+          <ul id="skillDetailTechnos" class="skill-detail__technos"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 DELIVERY · EDUCATION ============ -->
+  <section id="delivery" class="section" aria-labelledby="delivery-title">
+    <div class="section__inner">
+
+      <div class="terminal" data-terminal>
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--amber"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">jbbel@portfolio: ~/delivery</span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd" data-typing>ls -la /certs/</span></p>
+          <pre class="terminal__output terminal__output--table" data-output>total 7
+drwxr-xr-x  2 jbbel ssi   4096 Sep 2026 .
+drwxr-xr-x 10 jbbel ssi   4096 Sep 2026 ..
+-rw-r--r--  1 jbbel ssi   2048 Jun 2026 m2-cybersecurite.crt
+-rw-r--r--  1 jbbel ssi   2048 Sep 2023 bachelor-systeme-reseau.crt
+-rw-r--r--  1 jbbel ssi   1024 Jan 2024 palo-alto-cloud-security.crt
+-rw-r--r--  1 jbbel ssi   1024 Jan 2024 palo-alto-secops-fundamentals.crt
+-rw-r--r--  1 jbbel ssi   1024 2021 ccna-1-2-3.crt
+-rw-------  1 jbbel ssi    512 2023 drsd-secret-defense.crt
+-rw-r--r--  1 jbbel ssi    512 2022 pse2.crt</pre>
+        </div>
+      </div>
+
+      <p class="kicker" data-i18n="delivery.kicker">Étape 03 · Delivery</p>
+      <h2 id="delivery-title" data-i18n="delivery.title">Formation</h2>
+      <p class="section__intro" data-i18n="delivery.intro">Diplômes, certifications et habilitations, livrés comme un listing de fichiers.</p>
+
+      <h3 class="subsection-title" data-i18n="delivery.educationTitle">Diplômes</h3>
+      <div class="education-grid" id="educationGrid">
+        <!-- Rendered by JS from i18n delivery.items, static fallback below -->
+        <article class="cert-card fade-in">
+          <h4>Sup de Vinci · Master 2 Cybersécurité</h4>
+          <p class="cert-card__period">2024 - 2026</p>
+          <p class="cert-card__label">Projets associés</p>
+          <ul>
+            <li>Outil d'automatisation d'audits</li>
+            <li>Déploiement automatisé d'un SOC</li>
+          </ul>
+        </article>
+        <article class="cert-card fade-in">
+          <h4>Sup de Vinci · Bachelor Système &amp; Réseau, Cloud</h4>
+          <p class="cert-card__period">2020 - 2023</p>
+          <p class="cert-card__label">Projets associés</p>
+          <ul>
+            <li>Mise en place d'un système d'information client via Terraform et Ansible</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="subsection-title" data-i18n="delivery.certsTitle">Certifications &amp; habilitations</h3>
+      <ul class="badge-grid" id="certsGrid">
+        <li class="badge">Palo Alto · Cloud Security Automation</li>
+        <li class="badge">Palo Alto · Security Operations Fundamentals</li>
+        <li class="badge">CCNA 1 · Réseaux (OSI/TCP-IP)</li>
+        <li class="badge">CCNA 2 · Routage &amp; commutation LAN/WAN</li>
+        <li class="badge">CCNA 3 · Sécurité réseau</li>
+        <li class="badge">Secret de la défense nationale (DRSD)</li>
+        <li class="badge">PSE2 · Premiers Secours en Équipe niveau 2</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 04 EXPLOITATION · EXPERIENCE ============ -->
+  <section id="exploitation" class="section" aria-labelledby="exploitation-title">
+    <div class="section__inner">
+
+      <div class="terminal" data-terminal>
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--amber"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">jbbel@portfolio: ~/exploitation</span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd" data-typing>gobuster dir -u https://jbbel.dev/experience -w career.txt -t 50</span></p>
+          <pre class="terminal__output terminal__output--table" data-output>/ingenieur-ssi-dilt-m2       (Status: 200) [Size: 4096]
+/ingenieur-ssi-sgzds-m1      (Status: 200) [Size: 3821]
+/administrateur-sic-l3       (Status: 200) [Size: 2765]
+/technicien-sic-stage        (Status: 200) [Size: 1920]
+/secouriste-croix-rouge      (Status: 200) [Size: 1450]</pre>
+        </div>
+      </div>
+
+      <p class="kicker" data-i18n="exploitation.kicker">Étape 04 · Exploitation</p>
+      <h2 id="exploitation-title" data-i18n="exploitation.title">Expériences</h2>
+      <p class="section__intro" data-i18n="exploitation.intro">Chaque poste occupé, retrouvé comme une route exposée sur le serveur.</p>
+
+      <ol class="timeline" id="timeline">
+        <li class="timeline__item fade-in">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <p class="timeline__period">2024 - 2026</p>
+            <h3 class="timeline__org">Préfecture de Police de Paris · DILT</h3>
+            <p class="timeline__role">Ingénieur SSI (apprenti M2)</p>
+            <ul class="timeline__bullets">
+              <li>Déploiement et création de solutions de sécurité sur mesure</li>
+              <li>Audits et tests d'intrusion</li>
+              <li>Encadrement et management d'une équipe de 5 collaborateurs, participation au recrutement</li>
+              <li>Qualification et analyse d'e-mails et pièces jointes malveillantes, investigations et levée de doute en contexte de menace cyber</li>
+              <li>Gestion de projets en mode Agile et recommandations SSI sur les projets transverses</li>
+              <li>Appui au RSSI sur les analyses de risques et la mise en œuvre des référentiels de sécurité</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item fade-in">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <p class="timeline__period">2023 - 2024</p>
+            <h3 class="timeline__org">Préfecture de Police · SGZDS</h3>
+            <p class="timeline__role">Ingénieur SSI (apprenti M1)</p>
+            <ul class="timeline__bullets">
+              <li>Collaboration matricielle avec les équipes SSI</li>
+              <li>Mise en œuvre de la politique de sécurité des systèmes (PGSN MI)</li>
+              <li>Sécurisation des systèmes d'information pour les Jeux Olympiques de Paris 2024</li>
+              <li>Identification et évaluation des risques (ISO 27001)</li>
+              <li>Développement et déploiement de solutions de sécurité (station blanche, serveurs sécurisés)</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item fade-in">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <p class="timeline__period">2022 - 2023</p>
+            <h3 class="timeline__org">Préfecture de Police</h3>
+            <p class="timeline__role">Administrateur SIC (apprenti L3)</p>
+            <ul class="timeline__bullets">
+              <li>Support N1/N2</li>
+              <li>Ticketing GLPI</li>
+              <li>Solution de chiffrement sur matériel professionnel</li>
+              <li>Windows Server : domaine, Active Directory, forêt, SFTP, RDP, VPN, ADCS, gestion des droits, MDT, WSUS</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item fade-in">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <p class="timeline__period">2022</p>
+            <h3 class="timeline__org">Préfecture de Police</h3>
+            <p class="timeline__role">Technicien SIC (stage 4 mois)</p>
+            <ul class="timeline__bullets">
+              <li>Support N1</li>
+              <li>Ticketing GLPI</li>
+              <li>Rédaction de procédures techniciens et utilisateurs</li>
+              <li>Configuration et installation de matériels professionnels (NoeMI, Hesperis 2)</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item fade-in">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <p class="timeline__period">Depuis août 2025</p>
+            <h3 class="timeline__org">Croix-Rouge Française</h3>
+            <p class="timeline__role">Secouriste bénévole</p>
+            <ul class="timeline__bullets">
+              <li>Réseau de secours SAMU et BSPP</li>
+              <li>Dispositifs prévisionnels de secours</li>
+              <li>Maraudes</li>
+              <li>Interventions urgentes (plan ORSEC)</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 05 C2 · PROJECTS ============ -->
+  <section id="c2" class="section" aria-labelledby="c2-title">
+    <div class="section__inner">
+
+      <div class="terminal" data-terminal>
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--amber"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">jbbel@portfolio: ~/c2</span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd" data-typing>git log --oneline --all --decorate</span></p>
+          <pre class="terminal__output terminal__output--table" data-output>a1b2c3d (HEAD -> main, origin/main) feat: audit automation tool
+7f9e421 feat: automated SOC deployment
+c48d0aa feat: client IS via terraform + ansible
+0e12ab9 docs: add CTF write-ups</pre>
+        </div>
+      </div>
+
+      <p class="kicker" data-i18n="c2.kicker">Étape 05 · Command &amp; Control</p>
+      <h2 id="c2-title" data-i18n="c2.title">Projets</h2>
+      <p class="section__intro" data-i18n="c2.intro">Mes projets techniques et mes writeups DFIR / CTF.</p>
+
+      <div class="project-grid" id="projectGrid" aria-live="polite">
+        <!-- Rendered by JS from assets/data/projects.json -->
+      </div>
+
+      <noscript>
+        <ul class="noscript-list">
+          <li><a href="https://github.com/s0seche">Outil d'automatisation d'audits</a></li>
+          <li><a href="https://github.com/s0seche">Déploiement automatisé d'un SOC</a></li>
+          <li><a href="https://github.com/s0seche">Mise en place d'un SI client (Terraform, Ansible)</a></li>
+          <li><a href="https://s0seche.github.io/">Writeups DFIR &amp; CTF</a></li>
+        </ul>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- ============ 06 ACTIONS · CONTACT ============ -->
+  <section id="actions" class="section" aria-labelledby="actions-title">
+    <div class="section__inner">
+
+      <div class="terminal" data-terminal>
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--amber"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">jbbel@portfolio: ~/actions</span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd" data-typing>nc -lvnp 4444</span></p>
+          <pre class="terminal__output" data-output>listening on [any] 4444 ...
+connection received.</pre>
+        </div>
+      </div>
+
+      <p class="kicker" data-i18n="actions.kicker">Étape 06 · Actions sur objectifs</p>
+      <h2 id="actions-title" data-i18n="actions.title">Contact</h2>
+      <p class="section__intro" data-i18n="actions.intro">Connexion établie. Formulaire ou lien direct, au choix.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" action="mailto:jean.baptiste.bel.pro@gmail.com" method="post" enctype="text/plain">
+          <label for="cf-name" data-i18n="actions.formName">Nom</label>
+          <input type="text" id="cf-name" name="name" required autocomplete="name">
+
+          <label for="cf-email" data-i18n="actions.formEmail">Votre e-mail</label>
+          <input type="email" id="cf-email" name="email" required autocomplete="email">
+
+          <label for="cf-message" data-i18n="actions.formMessage">Message</label>
+          <textarea id="cf-message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn--primary">
+            <span data-i18n="actions.formSend">Envoyer</span>
+          </button>
+        </form>
+
+        <div class="contact-direct">
+          <h3 data-i18n="actions.directTitle">Contact direct</h3>
+          <ul class="contact-direct__list">
+            <li><a href="mailto:jean.baptiste.bel.pro@gmail.com">jean.baptiste.bel.pro@gmail.com</a></li>
+            <li><a href="https://s0seche.github.io/">Writeups DFIR &amp; CTF</a></li>
+            <li><a href="https://github.com/s0seche" target="_blank" rel="noopener noreferrer">GitHub · s0seche</a></li>
+          </ul>
+
+          <div class="contact-extra">
+            <div>
+              <h4 data-i18n="actions.languagesTitle">Langues</h4>
+              <ul class="lang-list">
+                <li>Français <span class="lang-list__level">Natif</span></li>
+                <li>Anglais <span class="lang-list__level">B2</span></li>
+                <li>Espagnol <span class="lang-list__level">A2</span></li>
+              </ul>
+            </div>
+            <div>
+              <h4 data-i18n="actions.qualitiesTitle">Qualités</h4>
+              <ul class="tag-list">
+                <li>Aisance relationnelle</li>
+                <li>Gestion du stress et de l'urgence</li>
+                <li>Rigueur</li>
+                <li>Autonomie</li>
+              </ul>
+            </div>
+            <div>
+              <h4 data-i18n="actions.passionsTitle">Passions</h4>
+              <ul class="tag-list">
+                <li>Aviation (LAPL)</li>
+                <li>CTF</li>
+                <li>Développement Python/Bash</li>
+                <li>Boxe française</li>
+                <li>Rugby</li>
+                <li>Secourisme</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p data-i18n="footer.text">Construit à la main, sans framework. Hébergé sur GitHub Pages.</p>
+  <a href="#recon" data-i18n="footer.backToTop">Retour en haut</a>
+</footer>
+
+<!-- Konami code easter egg overlay -->
+<div class="konami-overlay" id="konamiOverlay" role="dialog" aria-modal="true" aria-labelledby="konamiTitle" tabindex="-1" hidden>
+  <pre class="konami-overlay__content">
+<span id="konamiTitle">ROOT ACCESS GRANTED</span>
+
+$ cat /root/flag.txt
+<span id="konamiFlag">FLAG{you_found_the_konami_code}</span>
+
+<span id="konamiHint">Press any key to close</span></pre>
+</div>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/scrollfx.js"></script>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/terminal.js"></script>
+<script src="assets/js/skills.js"></script>
+<script src="assets/js/projects.js"></script>
+<script src="assets/js/easter-egg.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

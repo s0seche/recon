@@ -1,0 +1,50 @@
+[
+  {
+    "id": "audit-automation-tool",
+    "title": { "fr": "Outil d'automatisation d'audits", "en": "Audit Automation Tool" },
+    "description": {
+      "fr": "Script d'automatisation des tâches répétitives d'audit de sécurité (collecte de configuration, checklist de conformité, génération de rapport).",
+      "en": "Automation script for repetitive security audit tasks (configuration collection, compliance checklist, report generation)."
+    },
+    "tags": ["Python", "Bash", "Audit"],
+    "github": "https://github.com/s0seche",
+    "demo": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "automated-soc-deployment",
+    "title": { "fr": "Déploiement automatisé d'un SOC", "en": "Automated SOC Deployment" },
+    "description": {
+      "fr": "Chaîne de déploiement d'un centre opérationnel de sécurité (collecte de logs, corrélation, alerting) de bout en bout.",
+      "en": "End-to-end deployment pipeline for a security operations center (log collection, correlation, alerting)."
+    },
+    "tags": ["SOC", "SIEM", "Docker"],
+    "github": "https://github.com/s0seche",
+    "demo": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "client-is-terraform-ansible",
+    "title": { "fr": "Mise en place d'un SI client", "en": "Client IS Deployment" },
+    "description": {
+      "fr": "Déploiement infrastructure-as-code d'un système d'information client complet à l'aide de Terraform et Ansible.",
+      "en": "Infrastructure-as-code deployment of a complete client information system using Terraform and Ansible."
+    },
+    "tags": ["Terraform", "Ansible", "IaC"],
+    "github": "https://github.com/s0seche",
+    "demo": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "ctf-writeups",
+    "title": { "fr": "Writeups DFIR & CTF", "en": "DFIR & CTF Write-ups" },
+    "description": {
+      "fr": "Recueil de write-ups de challenges CTF : exploitation, forensique, reverse et cryptographie.",
+      "en": "Collection of CTF challenge write-ups: exploitation, forensics, reverse engineering and cryptography."
+    },
+    "tags": ["CTF", "Forensics", "Reverse"],
+    "github": "https://github.com/s0seche",
+    "demo": "https://s0seche.github.io/",
+    "status": "live"
+  }
+]
