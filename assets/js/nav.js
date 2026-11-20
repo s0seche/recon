@@ -1,5 +1,5 @@
 /**
- * nav.js — sticky nav active-state, kill-chain progress bar, mobile menu, lang switch.
+ * nav.js : sticky nav active-state, kill-chain progress bar, mobile menu, lang switch.
  */
 (function () {
   var SECTION_ORDER = ["recon", "weaponization", "delivery", "exploitation", "c2", "actions"];

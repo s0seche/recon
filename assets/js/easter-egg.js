@@ -1,5 +1,5 @@
 /**
- * easter-egg.js — Konami code (↑ ↑ ↓ ↓ ← → ← → b a) reveals a fake
+ * easter-egg.js : Konami code (↑ ↑ ↓ ↓ ← → ← → b a) reveals a fake
  * `cat /root/flag.txt` overlay. Purely decorative, no gameplay impact.
  */
 (function () {

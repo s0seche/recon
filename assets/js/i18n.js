@@ -1,5 +1,5 @@
 /**
- * i18n.js — bilingual FR/EN engine.
+ * i18n.js : bilingual FR/EN engine.
  * Loads assets/data/i18n.json, resolves data-i18n / data-i18n-aria attributes,
  * persists the chosen language in localStorage, and falls back to browser
  * language detection on first visit. Static HTML already contains real French

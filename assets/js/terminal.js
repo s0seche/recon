@@ -1,5 +1,5 @@
 /**
- * terminal.js — typewriter effect for fictitious commands, triggered when a
+ * terminal.js : typewriter effect for fictitious commands, triggered when a
  * terminal block enters the viewport. Pure progressive enhancement: the
  * setup step (which hides output/clears command text) only runs after this
  * script has confirmed it can run, so no-JS visitors see the full static

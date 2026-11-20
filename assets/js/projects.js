@@ -1,5 +1,5 @@
 /**
- * projects.js — renders the project cards grid from assets/data/projects.json.
+ * projects.js : renders the project cards grid from assets/data/projects.json.
  * Data-driven and easy to extend: add an object to the JSON array and a new
  * card appears automatically (see README for the schema).
  */

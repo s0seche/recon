@@ -1,5 +1,5 @@
 /**
- * skills.js — renders the skills grid from assets/data/skills.json and wires
+ * skills.js : renders the skills grid from assets/data/skills.json and wires
  * the "memory dump" detail dialog. Re-renders on language change.
  */
 (function () {

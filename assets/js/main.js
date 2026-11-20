@@ -1,5 +1,5 @@
 /**
- * main.js — bootstraps every module once the DOM is ready.
+ * main.js : bootstraps every module once the DOM is ready.
  * Each module is defensive on its own (checks for its DOM hooks before
  * running), so init order here only matters where one module's output
  * (I18N, ScrollFx) is read by another.

@@ -1,5 +1,5 @@
 /**
- * scrollfx.js — generic fade-in-on-scroll for elements with the `.fade-in`
+ * scrollfx.js : generic fade-in-on-scroll for elements with the `.fade-in`
  * class. Respects prefers-reduced-motion by doing nothing (CSS already shows
  * content instantly in that case, see style.css).
  */
