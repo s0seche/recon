@@ -3,7 +3,7 @@
 Portfolio d'ingénieur SSI présenté comme une **cyber kill chain** : chaque section du parcours est une étape d'une attaque, chaque contenu une sortie de terminal.
 
 **Site :** https://s0seche.github.io/recon/
-**Writeups DFIR & CTF :** https://s0seche.github.io/
+**Writeups DFIR & CTF :** https://s0seche.github.io/redteam_learning/
 
 ## Le parcours en 6 étapes
 
